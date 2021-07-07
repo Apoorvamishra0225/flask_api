@@ -13,6 +13,7 @@ def reccomendation():
                             host="fireside-dev-rds-instance-1.cecnjdgxlnqo.ap-south-1.rds.amazonaws.com", port="5432")
 
     # fetching all the users from db
+    #ghg
     cur = conn.cursor()
     cur.execute("select users.id from users ")
     temp_user_list = cur.fetchall()
